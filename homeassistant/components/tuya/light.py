@@ -299,11 +299,13 @@ LIGHTS: dict[str, tuple[TuyaLightEntityDescription, ...]] = {
             color_mode=DPCode.WORK_MODE,
             brightness=DPCode.BRIGHT_VALUE,
             color_temp=DPCode.TEMP_VALUE,
-            color_data=DPCode.COLOUR_DATA,
         ),
         TuyaLightEntityDescription(
             key=DPCode.SWITCH_NIGHT_LIGHT,
             name="Night light",
+            color_mode=DPCode.WORK_MODE,
+            brightness=DPCode.BRIGHT_VALUE,
+            color_data=DPCode.COLOUR_DATA,
         ),
     ),
     # Remote Control
